@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FyloDataStorage</title>
     <link rel="stylesheet" href="fylodatastorage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="background">
@@ -13,16 +16,30 @@
             <div id="logobox">
                 <div>
                     <img src="logo.svg">
-                </div>
-                <div>
-                    <img src="icon-document.svg">
-                    <img src="icon-folder.svg">
-                    <img src="icon-upload.svg">
+                </div><br/><br/>
+                <div class="icons">
+                    <div class="icons-box"><img src="icon-document.svg"></div>
+                    <div class="icons-box"><img src="icon-folder.svg"></div>
+                    <div class="icons-box"><img src="icon-upload.svg"></div>
                 </div>
             </div>
             <div id="datastorage">
-                <p>You've used <span>815 gb</span> of your storage</p>
-                
+                <div class="top-line">
+                    <p>You've used <span class="bottom-line">815 GB</span> of your storage</p>
+                    <div id="reminderbox">
+                        <span id="number">185 </span><span id="gb-left">GB LEFT</span>
+                        <div id="triangle"></div>
+                    </div>
+                </div>
+                <div class="loading">
+                    <div class="color-palette">
+                        <div class="wheel"></div>
+                    </div>
+                </div>
+                <div class="top-line">
+                    <p class="bottom-line">0 GB</p>
+                    <p class="bottom-line">1000 GB</p>
+                </div>
             </div>
         </div>
     </div>
