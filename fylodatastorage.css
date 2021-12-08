@@ -120,14 +120,32 @@ body {
         align-items: center;
     }
     #logobox {
-        width: 50%;
+        width: 80%;
         box-sizing: border-box;
         height: 200px;
     }
     #datastorage {
+        width: 80%;
         margin-top: 20px;
         margin-left: 0;
         position: relative;
+    }
+    
+    
+}
+@media (max-width:725px) {
+    #reminderbox {
+        padding:0;
+        padding-top: 10px;
+        text-align: center;
+        width: 150px;
+        top: 200px;
+    }
+    #logobox {
+        width: 300px
+    }
+    #datastorage {
+        width: 80%;
     }
     #reminderbox {
         top:200px;
@@ -137,21 +155,5 @@ body {
     }
     #triangle {
         display:none;
-    }
-}
-@media (max-width:725px) {
-    #reminderbox {
-        padding:0;
-        text-align: center;
-        width: 50%;
-        top: 220px;
-    }
-}
-@media (max-width:576px) {
-    #logobox {
-        padding: 40px 10px;
-    }
-    #reminderbox {
-        top:230px
     }
 }
